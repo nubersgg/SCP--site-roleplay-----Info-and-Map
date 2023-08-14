@@ -176,7 +176,6 @@ namespace Scp_Map
             // 
             // SCP_Picture_Box
             // 
-            this.SCP_Picture_Box.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SCP_Picture_Box.BackgroundImage")));
             this.SCP_Picture_Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.SCP_Picture_Box.Image = ((System.Drawing.Image)(resources.GetObject("SCP_Picture_Box.Image")));
             this.SCP_Picture_Box.InitialImage = ((System.Drawing.Image)(resources.GetObject("SCP_Picture_Box.InitialImage")));
@@ -257,7 +256,6 @@ namespace Scp_Map
             // Clipboar_BG
             // 
             this.Clipboar_BG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Clipboar_BG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Clipboar_BG.BackgroundImage")));
             this.Clipboar_BG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Clipboar_BG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Clipboar_BG.ImageLocation = "C:\\Users\\willi\\source\\repos\\Scp_Map - BACKUP 09_37\\Scp Map\\Images\\Clipboard.png";
@@ -270,7 +268,6 @@ namespace Scp_Map
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(918, 580);
@@ -769,7 +766,6 @@ namespace Scp_Map
             // 
             // Map_Picture_Box
             // 
-            this.Map_Picture_Box.Image = global::Scp_Map.Properties.Resources.Map;
             this.Map_Picture_Box.Location = new System.Drawing.Point(0, 0);
             this.Map_Picture_Box.Name = "Map_Picture_Box";
             this.Map_Picture_Box.Size = new System.Drawing.Size(907, 582);

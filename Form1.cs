@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -11,15 +12,62 @@ namespace Scp_Map
 {
     public partial class SCP_Roleplay : Form
     {
+        private static WebClient client = new WebClient();
+        Image backgroundIM = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/Background.png?raw=true")));
+        Image MapIM = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/Map.png?raw=true")));
+        Image ClipboardIM = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/Clipboard.png?raw=true")));
+        Image SCP_999 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_999.png?raw=true")));
+        Image SCP_3250 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_3250.png?raw=true")));
+        Image SCP_1193 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_1193.png?raw=true")));
+        Image SCP_860 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_860.png?raw=true")));
+        Image SCP_120 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_120.png?raw=true")));
+        Image SCP_1499 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_1499.png?raw=true")));
+        Image SCP_714 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_714.png?raw=true")));
+        Image SCP_914 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_914.png?raw=true")));
+        Image SCP_207 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_207.png?raw=true")));
+        Image SCP_330 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_330.png?raw=true")));
+        Image SCP_1025 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_1025.png?raw=true")));
+        Image SCP_517 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_517.png?raw=true")));
+        Image SCP_148 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_148.png?raw=true")));
+        Image SCP_178 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_178.png?raw=true")));
+        Image SCP_498 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_1139.png?raw=true")));
+        Image SCP_1139 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_1139.png?raw=true")));
+        Image SCP_087 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_087.png?raw=true")));
+        Image SCP_224 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_224.png?raw=true")));
+        Image SCP_902 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_902.png?raw=true")));
+        Image SCP_1162 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_1162.png?raw=true")));
+        Image SCP_701 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_701.png?raw=true")));
+        Image SCP_008 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_008.png?raw=true")));
+        Image SCP_2059 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_2059.png?raw=true")));
+        Image SCP_198 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_198.png?raw=true")));
+        Image SCP_173 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_173.png?raw=true")));
+        Image SCP_093 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_093.png?raw=true")));
+        Image SCP_035 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_035.png?raw=true")));
+        Image SCP_409 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_409.png?raw=true")));
+        Image SCP_049 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_049.png?raw=true")));
+        Image SCP_017 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_017.png?raw=true")));
+        Image SCP_2006 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_2006.png?raw=true")));
+        Image SCP_457 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_457.png?raw=true")));
+        Image SCP_939 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_939.png?raw=true")));
+        Image SCP_076 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_076.png?raw=true")));
+        Image SCP_096 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_096.png?raw=true")));
+        Image SCP_106 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_106.png?raw=true")));
         string newLine = Environment.NewLine;
+
         public SCP_Roleplay()
         {
             InitializeComponent();
+            InitializeImages();
         }
-
+        public void InitializeImages()
+        {
+            pictureBox1.Image = backgroundIM;
+            Map_Picture_Box.Image = MapIM;
+            Clipboar_BG.Image = ClipboardIM;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -92,43 +140,6 @@ namespace Scp_Map
         }
         private void Scp_Selector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Image SCP_999 = Image.
-            
-            Image SCP_3250 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_3250.png");
-            Image SCP_1193 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_1193.png");
-            Image SCP_860 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_860.png");
-            Image SCP_120 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_120.png");
-            Image SCP_1499 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_1499.png");
-            Image SCP_714 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_714.png");
-            Image SCP_914 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_914.png");
-            Image SCP_498 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_498.png");
-            Image SCP_207 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_207.png");
-            Image SCP_330 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_330.png");
-            Image SCP_1025 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_1025.png");
-            Image SCP_517 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_517.png");
-            Image SCP_148 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_148.png");
-            Image SCP_178 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_178.png");
-            Image SCP_1139 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_1139.png");
-            Image SCP_087 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_087.png");
-            Image SCP_224 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_224.png");
-            Image SCP_902 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_902.png");
-            Image SCP_1162 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_1162.png");
-            Image SCP_701 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_701.png");
-            Image SCP_008 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_008.png");
-            Image SCP_2059 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_2059.png");
-            Image SCP_198 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_198.png");
-            Image SCP_173 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_173.png");
-            Image SCP_093 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_093.png");
-            Image SCP_035 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_035.png");
-            Image SCP_409 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_409.png");
-            Image SCP_457 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_457.png");
-            Image SCP_939 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_939.png");
-            Image SCP_2006 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_2006.png");
-            Image SCP_017 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_017.png");
-            Image SCP_049 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_049.png");
-            Image SCP_076 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_076.png");
-            Image SCP_096 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_096.png");
-            Image SCP_106 = Image.FromFile(@"C:\Users\willi\source\repos\Scp_Map - BACKUP 09_37\Scp Map\Images\SCP_106.png");
             if (Scp_Selector.Text == "SCP")
             {
                 Scp_Number.Text = "No SCP selected";
