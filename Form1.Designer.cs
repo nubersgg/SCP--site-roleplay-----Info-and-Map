@@ -36,14 +36,11 @@ namespace Scp_Map
             this.Search_box = new System.Windows.Forms.TextBox();
             this.Clipboard = new System.Windows.Forms.TextBox();
             this.SCP_Rule_Box = new System.Windows.Forms.TextBox();
-            this.SCP_Picture_Box = new System.Windows.Forms.PictureBox();
             this.SCP_Info_Box = new System.Windows.Forms.TextBox();
             this.Scp_Number = new System.Windows.Forms.TextBox();
             this.Scp_Selector = new System.Windows.Forms.ComboBox();
             this.Con_Selector = new System.Windows.Forms.ComboBox();
             this.Exit_SCP_Info_Group_Box_button = new System.Windows.Forms.Button();
-            this.Clipboar_BG = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SCP_148_Button = new System.Windows.Forms.Button();
             this.SCP_178_Button = new System.Windows.Forms.Button();
             this.SCP_714_Button = new System.Windows.Forms.Button();
@@ -81,7 +78,11 @@ namespace Scp_Map
             this.SCP_096_Button = new System.Windows.Forms.Button();
             this.SCP_914_Button = new System.Windows.Forms.Button();
             this.SCP_049_Button = new System.Windows.Forms.Button();
+            this.SCP_Picture_Box = new System.Windows.Forms.PictureBox();
+            this.Clipboar_BG = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Map_Picture_Box = new System.Windows.Forms.PictureBox();
+            this.SCP_2521_Button = new System.Windows.Forms.Button();
             this.SCP_Info_Group_Box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SCP_Picture_Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Clipboar_BG)).BeginInit();
@@ -174,19 +175,6 @@ namespace Scp_Map
             this.SCP_Rule_Box.TabIndex = 7;
             this.SCP_Rule_Box.TextChanged += new System.EventHandler(this.SCP_Rule_Box_TextChanged);
             // 
-            // SCP_Picture_Box
-            // 
-            this.SCP_Picture_Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.SCP_Picture_Box.Image = ((System.Drawing.Image)(resources.GetObject("SCP_Picture_Box.Image")));
-            this.SCP_Picture_Box.InitialImage = ((System.Drawing.Image)(resources.GetObject("SCP_Picture_Box.InitialImage")));
-            this.SCP_Picture_Box.Location = new System.Drawing.Point(579, 328);
-            this.SCP_Picture_Box.Name = "SCP_Picture_Box";
-            this.SCP_Picture_Box.Size = new System.Drawing.Size(328, 239);
-            this.SCP_Picture_Box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SCP_Picture_Box.TabIndex = 6;
-            this.SCP_Picture_Box.TabStop = false;
-            this.SCP_Picture_Box.Click += new System.EventHandler(this.SCP_Picture_Box_Click);
-            // 
             // SCP_Info_Box
             // 
             this.SCP_Info_Box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -252,24 +240,6 @@ namespace Scp_Map
             this.Exit_SCP_Info_Group_Box_button.Text = "Back";
             this.Exit_SCP_Info_Group_Box_button.UseVisualStyleBackColor = true;
             this.Exit_SCP_Info_Group_Box_button.Click += new System.EventHandler(this.Exit_SCP_Info_Group_Box_button_Click);
-            // 
-            // Clipboar_BG
-            // 
-            this.Clipboar_BG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Clipboar_BG.Location = new System.Drawing.Point(0, 118);
-            this.Clipboar_BG.Name = "Clipboar_BG";
-            this.Clipboar_BG.Size = new System.Drawing.Size(269, 464);
-            this.Clipboar_BG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Clipboar_BG.TabIndex = 10;
-            this.Clipboar_BG.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(918, 580);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // SCP_148_Button
             // 
@@ -560,7 +530,7 @@ namespace Scp_Map
             // 
             this.SCP_701_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_701_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_701_Button.Location = new System.Drawing.Point(598, 251);
+            this.SCP_701_Button.Location = new System.Drawing.Point(626, 264);
             this.SCP_701_Button.Name = "SCP_701_Button";
             this.SCP_701_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_701_Button.TabIndex = 28;
@@ -761,13 +731,57 @@ namespace Scp_Map
             this.SCP_049_Button.UseVisualStyleBackColor = false;
             this.SCP_049_Button.Click += new System.EventHandler(this.SCP_049_Button_Click);
             // 
+            // SCP_Picture_Box
+            // 
+            this.SCP_Picture_Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.SCP_Picture_Box.Image = ((System.Drawing.Image)(resources.GetObject("SCP_Picture_Box.Image")));
+            this.SCP_Picture_Box.InitialImage = ((System.Drawing.Image)(resources.GetObject("SCP_Picture_Box.InitialImage")));
+            this.SCP_Picture_Box.Location = new System.Drawing.Point(579, 328);
+            this.SCP_Picture_Box.Name = "SCP_Picture_Box";
+            this.SCP_Picture_Box.Size = new System.Drawing.Size(328, 239);
+            this.SCP_Picture_Box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SCP_Picture_Box.TabIndex = 6;
+            this.SCP_Picture_Box.TabStop = false;
+            this.SCP_Picture_Box.Click += new System.EventHandler(this.SCP_Picture_Box_Click);
+            // 
+            // Clipboar_BG
+            // 
+            this.Clipboar_BG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Clipboar_BG.Location = new System.Drawing.Point(0, 118);
+            this.Clipboar_BG.Name = "Clipboar_BG";
+            this.Clipboar_BG.Size = new System.Drawing.Size(269, 464);
+            this.Clipboar_BG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Clipboar_BG.TabIndex = 10;
+            this.Clipboar_BG.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(918, 580);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Map_Picture_Box
             // 
+            this.Map_Picture_Box.Image = ((System.Drawing.Image)(resources.GetObject("Map_Picture_Box.Image")));
             this.Map_Picture_Box.Location = new System.Drawing.Point(0, 0);
             this.Map_Picture_Box.Name = "Map_Picture_Box";
             this.Map_Picture_Box.Size = new System.Drawing.Size(907, 582);
             this.Map_Picture_Box.TabIndex = 42;
             this.Map_Picture_Box.TabStop = false;
+            // 
+            // SCP_2521_Button
+            // 
+            this.SCP_2521_Button.BackColor = System.Drawing.Color.Lime;
+            this.SCP_2521_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SCP_2521_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SCP_2521_Button.Location = new System.Drawing.Point(593, 251);
+            this.SCP_2521_Button.Name = "SCP_2521_Button";
+            this.SCP_2521_Button.Size = new System.Drawing.Size(33, 23);
+            this.SCP_2521_Button.TabIndex = 48;
+            this.SCP_2521_Button.Text = "2521";
+            this.SCP_2521_Button.UseVisualStyleBackColor = false;
             // 
             // SCP_Roleplay
             // 
@@ -813,6 +827,7 @@ namespace Scp_Map
             this.Controls.Add(this.SCP_178_Button);
             this.Controls.Add(this.SCP_148_Button);
             this.Controls.Add(this.SCP_Button);
+            this.Controls.Add(this.SCP_2521_Button);
             this.Controls.Add(this.Map_Picture_Box);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SCP_Roleplay";
@@ -882,6 +897,7 @@ namespace Scp_Map
         private System.Windows.Forms.PictureBox Clipboar_BG;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox SCP_Roleplay_Text;
+        private System.Windows.Forms.Button SCP_2521_Button;
     }
 }
 
