@@ -119,7 +119,7 @@ namespace Scp_Map
             this.SCP_Info_Group_Box.Controls.Add(this.Clipboar_BG);
             this.SCP_Info_Group_Box.Controls.Add(this.pictureBox1);
             this.SCP_Info_Group_Box.Enabled = false;
-            this.SCP_Info_Group_Box.Location = new System.Drawing.Point(0, 1000);
+            this.SCP_Info_Group_Box.Location = new System.Drawing.Point(0, 0);
             this.SCP_Info_Group_Box.Name = "SCP_Info_Group_Box";
             this.SCP_Info_Group_Box.Size = new System.Drawing.Size(918, 578);
             this.SCP_Info_Group_Box.TabIndex = 3;
