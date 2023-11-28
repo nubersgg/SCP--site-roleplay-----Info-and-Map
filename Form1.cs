@@ -52,7 +52,7 @@ namespace Scp_Map
         Image SCP_076 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_076.png?raw=true")));
         Image SCP_096 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_096.png?raw=true")));
         Image SCP_106 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_106.png?raw=true")));
-        Image SCP_2521 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_106.png?raw=true")));
+        Image SCP_2521 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_2521.png?raw=true")));
         string newLine = Environment.NewLine;
 
         public SCP_Roleplay()
@@ -96,7 +96,7 @@ namespace Scp_Map
         private void Con_Selector_SelectedIndexChanged(object sender, EventArgs e)
         {
             string[] Con1Scp = new string[] {  "SCP 999",  "SCP 3250",  "SCP 1193",  "SCP 860", "SCP 120","SCP 1499", "SCP 714", "SCP 316", "SCP 914", "SCP 498", "SCP 207", "SCP 330", "SCP 1025", "SCP 517", "SCP 148", "SCP 178", "SCP 1139", "SCP 087", "SCP 224", "SCP 902"};
-            string[] Con2Scp = new string[] { "SCP 1162", "SCP 701", "SCP 008","SCP 2059","SCP 198","SCP 173","SCP 093","SCP 035","SCP 409","2521"};
+            string[] Con2Scp = new string[] { "SCP 1162", "SCP 701", "SCP 008","SCP 2059","SCP 198","SCP 173","SCP 093","SCP 035","SCP 409","SCP 2521"};
             string[] ConXScp = new string[] { "SCP 049","SCP 017","SCP 2006", "SCP 939", "SCP 457",};
             string[] ConLXScp = new string[] { "SCP 096","SCP 106","SCP 076", "SCP 610"};
             if (Con_Selector.Text == "CON 1")
@@ -598,20 +598,20 @@ namespace Scp_Map
 
                 else
                 {
-                    SCP_2521_Button.BackColor = Color.FromArgb(0, 255, 0);
+                    SCP_610_Button.BackColor = Color.FromArgb(0, 255, 0);
                 };
                 if (Scp_Selector.Text == "SCP 2521")
                 {
                     SCP_Info_Box.Text = (Scp_Selector.Text + " " + "info" + newLine + "" + newLine + "SCP-2521, also known as ●●|●●●●●|●●|●, is an antagonist in the SCP Foundation series. It is a Keter-class entity currently uncontained by the Foundation due to its capabilities. It is a creature who steals every piece of information about its nature, as long as the information is expressed in textual or verbal form. Because of that, nearly everything about it is registered by ideograms and pictures.");
-                    SCP_Rule_Box.Text = (Scp_Selector.Text + " " + "Rules" + newLine + "" + newLine + "Don't say the numbers that is on the paper ro you will be terminated");
+                    SCP_Rule_Box.Text = (Scp_Selector.Text + " " + "Rules" + newLine + "" + newLine + "Don't say the numbers that is on the paper ro you will be terminated.");
                     Clipboard.Text = ("SCP Ten Dots" + newLine + "" + newLine + "Threat Level: Keter" + newLine + "Recontainment method: unknown" + newLine + "Must: II combatives Required" + newLine + "Class-D limit: III" + "Level required: Level-II" + newLine + "Alias: Ten Dots" + newLine + "location: CON-II" + newLine + "Logs:");
-                    SCP_2521_Button.BackColor = Color.FromArgb(255, 0, 0);
+                    SCP_2521_Button_1.BackColor = Color.FromArgb(255, 0, 0);
                     SCP_Picture_Box.Image = SCP_2521;
                 }
 
                 else
                 {
-                    SCP_2521_Button.BackColor = Color.FromArgb(0, 255, 0);
+                    SCP_2521_Button_1.BackColor = Color.FromArgb(0, 255, 0);
                 };
             };
         }
@@ -898,6 +898,12 @@ namespace Scp_Map
         }
 
         private void SCP_2521_Button_Click(object sender, EventArgs e)
+        {
+            Con_Selector.Text = "Con 2";
+            Scp_Selector.Text = "SCP 2521";
+        }
+
+        private void SCP_2521_Button_Click_1(object sender, EventArgs e)
         {
             Con_Selector.Text = "Con 2";
             Scp_Selector.Text = "SCP 2521";
