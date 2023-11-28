@@ -876,5 +876,10 @@ namespace Scp_Map
                 Scp_Selector.Text = ("SCP " + Search_box.Text);
             }
         }
+
+        private void Clipboar_BG_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

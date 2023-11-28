@@ -98,8 +98,8 @@
     <Compile Include="Properties\image.cs" />
     <Compile Include="Properties\Resources.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\ResourcesBase1.cs" />

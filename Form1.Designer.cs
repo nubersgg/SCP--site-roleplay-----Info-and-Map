@@ -255,10 +255,7 @@ namespace Scp_Map
             // 
             // Clipboar_BG
             // 
-            this.Clipboar_BG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Clipboar_BG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Clipboar_BG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Clipboar_BG.ImageLocation = "C:\\Users\\willi\\source\\repos\\Scp_Map - BACKUP 09_37\\Scp Map\\Images\\Clipboard.png";
             this.Clipboar_BG.Location = new System.Drawing.Point(0, 118);
             this.Clipboar_BG.Name = "Clipboar_BG";
             this.Clipboar_BG.Size = new System.Drawing.Size(269, 464);

@@ -63,26 +63,6 @@ namespace Scp_Map.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Map {
-            get {
-                object obj = ResourceManager.GetObject("Map", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Map1 {
-            get {
-                object obj = ResourceManager.GetObject("Map1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap SCP_087 {
             get {
                 object obj = ResourceManager.GetObject("SCP_087", resourceCulture);
