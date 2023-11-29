@@ -53,6 +53,7 @@ namespace Scp_Map
         Image SCP_096 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_096.png?raw=true")));
         Image SCP_106 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_106.png?raw=true")));
         Image SCP_2521 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_2521.png?raw=true")));
+        Image SCP_403 = Image.FromStream(new System.IO.MemoryStream(client.DownloadData("https://github.com/nubersgg/SCP--site-roleplay-----Info-and-Map/blob/master/Images/SCP_403.png?raw=true")));
         string newLine = Environment.NewLine;
 
         public SCP_Roleplay()
@@ -95,7 +96,7 @@ namespace Scp_Map
 
         private void Con_Selector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string[] Con1Scp = new string[] {  "SCP 999",  "SCP 3250",  "SCP 1193",  "SCP 860", "SCP 120","SCP 1499", "SCP 714", "SCP 316", "SCP 914", "SCP 498", "SCP 207", "SCP 330", "SCP 1025", "SCP 517", "SCP 148", "SCP 178", "SCP 1139", "SCP 087", "SCP 224", "SCP 902"};
+            string[] Con1Scp = new string[] {  "SCP 999",  "SCP 3250",  "SCP 1193",  "SCP 860", "SCP 120","SCP 1499", "SCP 714", "SCP 316", "SCP 914", "SCP 498", "SCP 207", "SCP 330", "SCP 1025", "SCP 517", "SCP 148", "SCP 178", "SCP 1139", "SCP 087", "SCP 224", "SCP 902","SCP 403"};
             string[] Con2Scp = new string[] { "SCP 1162", "SCP 701", "SCP 008","SCP 2059","SCP 198","SCP 173","SCP 093","SCP 035","SCP 409","SCP 2521"};
             string[] ConXScp = new string[] { "SCP 049","SCP 017","SCP 2006", "SCP 939", "SCP 457",};
             string[] ConLXScp = new string[] { "SCP 096","SCP 106","SCP 076", "SCP 610"};
@@ -165,7 +166,7 @@ namespace Scp_Map
                 {
                     SCP_Info_Box.Text = (Scp_Selector.Text + " " + "info" + newLine + "" + newLine + "Special Containment Procedures: A sample of the original Kentucky Fried Chicken Eleven Secret Herbs and Spices is to be kept in a standard Safe-Class item locker in Site-88. A digital copy of the recipe is available on the Site-88 database. Widespread reproduction of SCP-3250's effects has been made impossible due to the exclusive rights of Kentucky Fried Chicken to market and sell chicken flavoured with its trademark secret recipe, as well as the acquisition of the ██████████ Family Plantation through a Foundation front and the subsequent monopoly established on the ██████████-variety peppercorn."+newLine+""+newLine+ "Description: SCP-3250 is a perceptual anomaly affecting individuals who have consumed pressure-cooked fried chicken seasoned with Kentucky Fried Chicken's proprietary Eleven Secret Herbs and Spices. For a period of time after consumption, people affected by the anomaly will perceive depictions of Jesus Christ as being altered to resemble American businessman and restauranteur Colonel Harland David Sanders, clad in his trademark white suit and bolo tie. Altered depictions will be of similar art style to the original. All manner of visual depictions are affected, including secular depictions.");
                     SCP_Rule_Box.Text = (Scp_Selector.Text + " " + "Rules" + newLine + "" + newLine + "Public knowledge of the substitution of Kentucky Fried Chicken's secret Eleven Secret Herbs and Spices recipe is to be suppressed");
-                    Clipboard.Text = ("SCP: Eleven Secret Herbs and Spices" + newLine + "" + newLine + "Threat Level: safe" + newLine + "Recontainment method: unknown" + newLine + "Class-D limit: III" + newLine + "Level required: Level-I" + newLine + "Alias: Eleven Secret Herbs and Spices" + newLine + "location: CON-I" + newLine + "Logs:");
+                    Clipboard.Text = ("Removed--SCP: Eleven Secret Herbs and Spices--Removed" + newLine + "" + newLine + "Threat Level: safe" + newLine + "Recontainment method: unknown" + newLine + "Class-D limit: III" + newLine + "Level required: Level-I" + newLine + "Alias: Eleven Secret Herbs and Spices" + newLine + "location: Removed" + newLine + "Logs:");
                     SCP_3250_Button.BackColor = Color.FromArgb(255, 0, 0);
                     SCP_Picture_Box.Image = SCP_3250;
                 }
@@ -611,7 +612,20 @@ namespace Scp_Map
 
                 else
                 {
-                    SCP_2521_Button_1.BackColor = Color.FromArgb(0, 255, 0);
+                    SCP_403_Button.BackColor = Color.FromArgb(0, 255, 0);
+                };
+                if (Scp_Selector.Text == "SCP 403")
+                {
+                    SCP_Info_Box.Text = (Scp_Selector.Text + " " + "info" + newLine + "" + newLine + "Special Containment Procedures: SCP-403 is to be sealed in a steel safe with a combination known only by Dr. ████ ███████. The walls of the safe must be reinforced with fire-retardant material complying with Foundation standard C3/403. The safe will remain under surveillance by 2 armed guards at all times.");
+                    SCP_Rule_Box.Text = (Scp_Selector.Text + " " + "Rules" + newLine + "" + newLine + "If ignited: keep far distance or seek shelter in a nearby room");
+                    Clipboard.Text = ("Escalating Lighter" + newLine + "" + newLine + "Threat Level: Safe" + newLine + "Recontainment method: unknown" + newLine + "Must: Zero or more combatatives" + newLine + "Class-D limit: III" + "Level required: Level-1" + newLine + "Alias: Escalating Lighter" + newLine + "location: CON-I" + newLine + "Logs:");
+                    SCP_403_Button.BackColor = Color.FromArgb(255, 0, 0);
+                    SCP_Picture_Box.Image = SCP_403;
+                }
+
+                else
+                {
+                    SCP_403_Button.BackColor = Color.FromArgb(0, 255, 0);
                 };
             };
         }
@@ -870,7 +884,7 @@ namespace Scp_Map
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-            if(Search_box.Text=="3250"||Search_box.Text=="1193"|| Search_box.Text == "860" || Search_box.Text == "999" || Search_box.Text == "120" || Search_box.Text == "1499" || Search_box.Text == "714" || Search_box.Text == "316" || Search_box.Text == "914" || Search_box.Text == "498" || Search_box.Text == "207" || Search_box.Text == "330" || Search_box.Text == "1025" || Search_box.Text == "517" || Search_box.Text == "148" || Search_box.Text == "178" || Search_box.Text == "1139" || Search_box.Text == "087" || Search_box.Text == "224" || Search_box.Text == "902")
+            if(Search_box.Text=="3250"||Search_box.Text=="1193"|| Search_box.Text == "860" || Search_box.Text == "999" || Search_box.Text == "120" || Search_box.Text == "1499" || Search_box.Text == "714" || Search_box.Text == "316" || Search_box.Text == "914" || Search_box.Text == "498" || Search_box.Text == "207" || Search_box.Text == "330" || Search_box.Text == "1025" || Search_box.Text == "517" || Search_box.Text == "148" || Search_box.Text == "178" || Search_box.Text == "1139" || Search_box.Text == "087" || Search_box.Text == "224" || Search_box.Text == "902" || Search_box.Text == "403")
             {
                 Con_Selector.Text = "Con 1";
                 Scp_Selector.Text = ("SCP " + Search_box.Text);
@@ -907,6 +921,12 @@ namespace Scp_Map
         {
             Con_Selector.Text = "Con 2";
             Scp_Selector.Text = "SCP 2521";
+        }
+
+        private void SCP_403_Button_Click(object sender, EventArgs e)
+        {
+            Con_Selector.Text = "Con 1";
+            Scp_Selector.Text = "SCP 403";
         }
     }
 }
