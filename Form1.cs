@@ -612,7 +612,7 @@ namespace Scp_Map
 
                 else
                 {
-                    SCP_403_Button.BackColor = Color.FromArgb(0, 255, 0);
+                    SCP_2521_Button_1.BackColor = Color.FromArgb(0, 255, 0);
                 };
                 if (Scp_Selector.Text == "SCP 403")
                 {
