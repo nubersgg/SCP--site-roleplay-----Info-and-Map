@@ -288,7 +288,7 @@ namespace Scp_Map
             // 
             this.SCP_178_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_178_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_178_Button.Location = new System.Drawing.Point(344, 251);
+            this.SCP_178_Button.Location = new System.Drawing.Point(340, 251);
             this.SCP_178_Button.Name = "SCP_178_Button";
             this.SCP_178_Button.Size = new System.Drawing.Size(33, 20);
             this.SCP_178_Button.TabIndex = 6;
@@ -327,7 +327,7 @@ namespace Scp_Map
             this.SCP_1139_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_1139_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SCP_1139_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SCP_1139_Button.Location = new System.Drawing.Point(344, 306);
+            this.SCP_1139_Button.Location = new System.Drawing.Point(340, 306);
             this.SCP_1139_Button.Name = "SCP_1139_Button";
             this.SCP_1139_Button.Size = new System.Drawing.Size(31, 23);
             this.SCP_1139_Button.TabIndex = 9;
@@ -340,7 +340,7 @@ namespace Scp_Map
             // 
             this.SCP_330_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_330_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_330_Button.Location = new System.Drawing.Point(370, 373);
+            this.SCP_330_Button.Location = new System.Drawing.Point(372, 368);
             this.SCP_330_Button.Name = "SCP_330_Button";
             this.SCP_330_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_330_Button.TabIndex = 10;
@@ -377,7 +377,7 @@ namespace Scp_Map
             // 
             this.SCP_224_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_224_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_224_Button.Location = new System.Drawing.Point(437, 238);
+            this.SCP_224_Button.Location = new System.Drawing.Point(434, 242);
             this.SCP_224_Button.Name = "SCP_224_Button";
             this.SCP_224_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_224_Button.TabIndex = 13;
@@ -389,7 +389,7 @@ namespace Scp_Map
             // 
             this.SCP_860_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_860_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_860_Button.Location = new System.Drawing.Point(437, 213);
+            this.SCP_860_Button.Location = new System.Drawing.Point(434, 213);
             this.SCP_860_Button.Name = "SCP_860_Button";
             this.SCP_860_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_860_Button.TabIndex = 14;
@@ -476,7 +476,7 @@ namespace Scp_Map
             // 
             this.SCP_120_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_120_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_120_Button.Location = new System.Drawing.Point(437, 352);
+            this.SCP_120_Button.Location = new System.Drawing.Point(432, 352);
             this.SCP_120_Button.Name = "SCP_120_Button";
             this.SCP_120_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_120_Button.TabIndex = 21;
@@ -488,7 +488,7 @@ namespace Scp_Map
             // 
             this.SCP_087_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_087_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_087_Button.Location = new System.Drawing.Point(437, 323);
+            this.SCP_087_Button.Location = new System.Drawing.Point(432, 323);
             this.SCP_087_Button.Name = "SCP_087_Button";
             this.SCP_087_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_087_Button.TabIndex = 22;
@@ -500,7 +500,7 @@ namespace Scp_Map
             // 
             this.SCP_035_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_035_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_035_Button.Location = new System.Drawing.Point(489, 373);
+            this.SCP_035_Button.Location = new System.Drawing.Point(489, 370);
             this.SCP_035_Button.Name = "SCP_035_Button";
             this.SCP_035_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_035_Button.TabIndex = 23;
@@ -512,7 +512,7 @@ namespace Scp_Map
             // 
             this.SCP_409_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_409_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_409_Button.Location = new System.Drawing.Point(549, 395);
+            this.SCP_409_Button.Location = new System.Drawing.Point(544, 386);
             this.SCP_409_Button.Name = "SCP_409_Button";
             this.SCP_409_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_409_Button.TabIndex = 24;
@@ -524,7 +524,7 @@ namespace Scp_Map
             // 
             this.SCP_093_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_093_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_093_Button.Location = new System.Drawing.Point(601, 340);
+            this.SCP_093_Button.Location = new System.Drawing.Point(593, 335);
             this.SCP_093_Button.Name = "SCP_093_Button";
             this.SCP_093_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_093_Button.TabIndex = 25;
@@ -536,7 +536,7 @@ namespace Scp_Map
             // 
             this.SCP_173_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_173_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_173_Button.Location = new System.Drawing.Point(562, 323);
+            this.SCP_173_Button.Location = new System.Drawing.Point(558, 310);
             this.SCP_173_Button.Name = "SCP_173_Button";
             this.SCP_173_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_173_Button.TabIndex = 26;
@@ -549,7 +549,7 @@ namespace Scp_Map
             this.SCP_1162_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_1162_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SCP_1162_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SCP_1162_Button.Location = new System.Drawing.Point(636, 306);
+            this.SCP_1162_Button.Location = new System.Drawing.Point(626, 296);
             this.SCP_1162_Button.Name = "SCP_1162_Button";
             this.SCP_1162_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_1162_Button.TabIndex = 27;
@@ -695,7 +695,7 @@ namespace Scp_Map
             this.SCP_076_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_076_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SCP_076_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SCP_076_Button.Location = new System.Drawing.Point(768, 288);
+            this.SCP_076_Button.Location = new System.Drawing.Point(765, 284);
             this.SCP_076_Button.Name = "SCP_076_Button";
             this.SCP_076_Button.Size = new System.Drawing.Size(31, 23);
             this.SCP_076_Button.TabIndex = 37;
@@ -740,7 +740,7 @@ namespace Scp_Map
             // 
             this.SCP_914_Button.BackColor = System.Drawing.Color.Lime;
             this.SCP_914_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SCP_914_Button.Location = new System.Drawing.Point(398, 288);
+            this.SCP_914_Button.Location = new System.Drawing.Point(393, 287);
             this.SCP_914_Button.Name = "SCP_914_Button";
             this.SCP_914_Button.Size = new System.Drawing.Size(33, 23);
             this.SCP_914_Button.TabIndex = 40;
@@ -769,7 +769,8 @@ namespace Scp_Map
             this.Map_Picture_Box.Image = ((System.Drawing.Image)(resources.GetObject("Map_Picture_Box.Image")));
             this.Map_Picture_Box.Location = new System.Drawing.Point(0, 0);
             this.Map_Picture_Box.Name = "Map_Picture_Box";
-            this.Map_Picture_Box.Size = new System.Drawing.Size(907, 582);
+            this.Map_Picture_Box.Size = new System.Drawing.Size(918, 573);
+            this.Map_Picture_Box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Map_Picture_Box.TabIndex = 42;
             this.Map_Picture_Box.TabStop = false;
             // 
@@ -778,7 +779,7 @@ namespace Scp_Map
             this.SCP_2521_Button_1.BackColor = System.Drawing.Color.Lime;
             this.SCP_2521_Button_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SCP_2521_Button_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SCP_2521_Button_1.Location = new System.Drawing.Point(593, 251);
+            this.SCP_2521_Button_1.Location = new System.Drawing.Point(587, 251);
             this.SCP_2521_Button_1.Name = "SCP_2521_Button_1";
             this.SCP_2521_Button_1.Size = new System.Drawing.Size(33, 23);
             this.SCP_2521_Button_1.TabIndex = 48;
