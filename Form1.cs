@@ -618,7 +618,7 @@ namespace Scp_Map
                 {
                     SCP_Info_Box.Text = (Scp_Selector.Text + " " + "info" + newLine + "" + newLine + "Special Containment Procedures: SCP-403 is to be sealed in a steel safe with a combination known only by Dr. ████ ███████. The walls of the safe must be reinforced with fire-retardant material complying with Foundation standard C3/403. The safe will remain under surveillance by 2 armed guards at all times.");
                     SCP_Rule_Box.Text = (Scp_Selector.Text + " " + "Rules" + newLine + "" + newLine + "If ignited: keep far distance or seek shelter in a nearby room");
-                    Clipboard.Text = ("Escalating Lighter" + newLine + "" + newLine + "Threat Level: Safe" + newLine + "Recontainment method: unknown" + newLine + "Must: Zero or more combatatives" + newLine + "Class-D limit: III" + "Level required: Level-1" + newLine + "Alias: Escalating Lighter" + newLine + "location: CON-I" + newLine + "Logs:");
+                    Clipboard.Text = ("SCP Escalating Lighter" + newLine + "" + newLine + "Threat Level: Safe" + newLine + "Recontainment method: unknown" + newLine + "Must: Zero or more combatatives" + newLine + "Class-D limit: III" + "Level required: Level-1" + newLine + "Alias: Escalating Lighter" + newLine + "location: CON-I" + newLine + "Logs:");
                     SCP_403_Button.BackColor = Color.FromArgb(255, 0, 0);
                     SCP_Picture_Box.Image = SCP_403;
                 }
