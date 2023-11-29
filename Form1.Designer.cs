@@ -766,7 +766,6 @@ namespace Scp_Map
             // 
             // Map_Picture_Box
             // 
-            this.Map_Picture_Box.Image = ((System.Drawing.Image)(resources.GetObject("Map_Picture_Box.Image")));
             this.Map_Picture_Box.Location = new System.Drawing.Point(0, 0);
             this.Map_Picture_Box.Name = "Map_Picture_Box";
             this.Map_Picture_Box.Size = new System.Drawing.Size(918, 573);
