@@ -605,7 +605,7 @@ namespace Scp_Map
                 {
                     SCP_Info_Box.Text = (Scp_Selector.Text + " " + "info" + newLine + "" + newLine + "SCP-2521, also known as ●●|●●●●●|●●|●, is an antagonist in the SCP Foundation series. It is a Keter-class entity currently uncontained by the Foundation due to its capabilities. It is a creature who steals every piece of information about its nature, as long as the information is expressed in textual or verbal form. Because of that, nearly everything about it is registered by ideograms and pictures.");
                     SCP_Rule_Box.Text = (Scp_Selector.Text + " " + "Rules" + newLine + "" + newLine + "Don't say the numbers that is on the paper ro you will be terminated.");
-                    Clipboard.Text = ("SCP Ten Dots" + newLine + "" + newLine + "Threat Level: Keter" + newLine + "Recontainment method: unknown" + newLine + "Must: II combatives Required" + newLine + "Class-D limit: III" + "Level required: Level-II" + newLine + "Alias: Ten Dots" + newLine + "location: CON-II" + newLine + "Logs:");
+                    Clipboard.Text = ("SCP Ten Dots" + newLine + "" + newLine + "Threat Level: Keter" + newLine + "Recontainment method: unknown" + newLine + "Must: II combatives Required" + newLine + "Class-D limit: III" + newLine + "Level required: Level-II" + newLine + "Alias: Ten Dots" + newLine + "location: CON-II" + newLine + "Logs:");
                     SCP_2521_Button_1.BackColor = Color.FromArgb(255, 0, 0);
                     SCP_Picture_Box.Image = SCP_2521;
                 }
@@ -891,21 +891,26 @@ namespace Scp_Map
             {
                 Con_Selector.Text = "Con 1";
                 Scp_Selector.Text = ("SCP " + Search_box.Text);
+                SCP_Change();
             }
             if (Search_box.Text == "1162" || Search_box.Text == "701" || Search_box.Text == "008" || Search_box.Text == "2059" || Search_box.Text == "198" || Search_box.Text == "173" || Search_box.Text == "093" || Search_box.Text == "035" || Search_box.Text == "409" || Search_box.Text == "2521")
             {
                 Con_Selector.Text = "Con 2";
                 Scp_Selector.Text = ("SCP " + Search_box.Text);
+                SCP_Change();
             }
             if (Search_box.Text == "049" || Search_box.Text == "017" || Search_box.Text == "2006" || Search_box.Text == "939" || Search_box.Text == "457")
+                SCP_Change();
             {
                 Con_Selector.Text = "Con X";
                 Scp_Selector.Text = ("SCP " + Search_box.Text);
+                SCP_Change();
             }
             if (Search_box.Text == "096" || Search_box.Text == "106" || Search_box.Text == "076" || Search_box.Text == "610")
             {
                 Con_Selector.Text = "Con X Lower";
                 Scp_Selector.Text = ("SCP " + Search_box.Text);
+                SCP_Change();
             }
         }
 
