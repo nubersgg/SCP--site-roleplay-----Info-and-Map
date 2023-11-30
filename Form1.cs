@@ -605,7 +605,7 @@ namespace Scp_Map
                 {
                     SCP_Info_Box.Text = (Scp_Selector.Text + " " + "info" + newLine + "" + newLine + "SCP-2521, also known as ●●|●●●●●|●●|●, is an antagonist in the SCP Foundation series. It is a Keter-class entity currently uncontained by the Foundation due to its capabilities. It is a creature who steals every piece of information about its nature, as long as the information is expressed in textual or verbal form. Because of that, nearly everything about it is registered by ideograms and pictures.");
                     SCP_Rule_Box.Text = (Scp_Selector.Text + " " + "Rules" + newLine + "" + newLine + "Don't say the numbers that is on the paper ro you will be terminated.");
-                    Clipboard.Text = ("SCP Ten Dots" + newLine + "" + newLine + "Threat Level: Keter" + newLine + "Recontainment method: unknown" + newLine + "Must: II combatives Required" + newLine + "Class-D limit: III" + newLine + "Level required: Level-II" + newLine + "Alias: Ten Dots" + newLine + "location: CON-II" + newLine + "Logs:");
+                    Clipboard.Text = ("SCP ●●I●●●●●I●●I●" + newLine + "" + newLine + "Threat Level: Keter" + newLine + "Recontainment method: unknown" + newLine + "Must: II combatives Required" + newLine + "Class-D limit: III" + newLine + "Level required: Level-II" + newLine + "Alias: ●●I●●●●●I●●I●" + newLine + "location: CON-II" + newLine + "Logs:");
                     SCP_2521_Button_1.BackColor = Color.FromArgb(255, 0, 0);
                     SCP_Picture_Box.Image = SCP_2521;
                 }
