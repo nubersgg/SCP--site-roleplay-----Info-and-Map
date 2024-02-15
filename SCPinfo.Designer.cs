@@ -32,6 +32,8 @@ namespace Scp_Map
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SCP_Roleplay));
             this.SCP_Button = new System.Windows.Forms.Button();
             this.SCP_Info_Group_Box = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Random_Button = new System.Windows.Forms.Button();
             this.SCP_Roleplay_Text = new System.Windows.Forms.TextBox();
             this.Search_box = new System.Windows.Forms.TextBox();
             this.Clipboard = new System.Windows.Forms.TextBox();
@@ -84,7 +86,6 @@ namespace Scp_Map
             this.Map_Picture_Box = new System.Windows.Forms.PictureBox();
             this.SCP_2521_Button_1 = new System.Windows.Forms.Button();
             this.SCP_403_Button = new System.Windows.Forms.Button();
-            this.Random_Button = new System.Windows.Forms.Button();
             this.SCP_Info_Group_Box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SCP_Picture_Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Clipboar_BG)).BeginInit();
@@ -108,6 +109,7 @@ namespace Scp_Map
             // SCP_Info_Group_Box
             // 
             this.SCP_Info_Group_Box.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.SCP_Info_Group_Box.Controls.Add(this.button1);
             this.SCP_Info_Group_Box.Controls.Add(this.Random_Button);
             this.SCP_Info_Group_Box.Controls.Add(this.SCP_Roleplay_Text);
             this.SCP_Info_Group_Box.Controls.Add(this.Search_box);
@@ -129,6 +131,26 @@ namespace Scp_Map
             this.SCP_Info_Group_Box.TabStop = false;
             this.SCP_Info_Group_Box.Text = "SCP Info";
             this.SCP_Info_Group_Box.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(832, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "TestTracker";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // Random_Button
+            // 
+            this.Random_Button.Location = new System.Drawing.Point(6, 118);
+            this.Random_Button.Name = "Random_Button";
+            this.Random_Button.Size = new System.Drawing.Size(150, 23);
+            this.Random_Button.TabIndex = 13;
+            this.Random_Button.Text = "Random";
+            this.Random_Button.UseVisualStyleBackColor = true;
+            this.Random_Button.Click += new System.EventHandler(this.Random_Button_Click);
             // 
             // SCP_Roleplay_Text
             // 
@@ -804,16 +826,6 @@ namespace Scp_Map
             this.SCP_403_Button.UseVisualStyleBackColor = false;
             this.SCP_403_Button.Click += new System.EventHandler(this.SCP_403_Button_Click);
             // 
-            // Random_Button
-            // 
-            this.Random_Button.Location = new System.Drawing.Point(6, 118);
-            this.Random_Button.Name = "Random_Button";
-            this.Random_Button.Size = new System.Drawing.Size(150, 23);
-            this.Random_Button.TabIndex = 13;
-            this.Random_Button.Text = "Random";
-            this.Random_Button.UseVisualStyleBackColor = true;
-            this.Random_Button.Click += new System.EventHandler(this.Random_Button_Click);
-            // 
             // SCP_Roleplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -932,6 +944,7 @@ namespace Scp_Map
         private System.Windows.Forms.Button SCP_2521_Button_1;
         private System.Windows.Forms.Button SCP_403_Button;
         private System.Windows.Forms.Button Random_Button;
+        private System.Windows.Forms.Button button1;
     }
 }
 
