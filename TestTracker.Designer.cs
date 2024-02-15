@@ -218,6 +218,7 @@
             this.ScpTB_Write.Name = "ScpTB_Write";
             this.ScpTB_Write.Size = new System.Drawing.Size(128, 20);
             this.ScpTB_Write.TabIndex = 26;
+            this.ScpTB_Write.TextChanged += new System.EventHandler(this.ScpTB_Write_TextChanged);
             // 
             // HostTB_Write
             // 
@@ -225,6 +226,7 @@
             this.HostTB_Write.Name = "HostTB_Write";
             this.HostTB_Write.Size = new System.Drawing.Size(128, 20);
             this.HostTB_Write.TabIndex = 27;
+            this.HostTB_Write.TextChanged += new System.EventHandler(this.HostTB_Write_TextChanged);
             // 
             // lstCombatative
             // 

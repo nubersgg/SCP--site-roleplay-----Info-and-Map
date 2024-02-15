@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Scp_Map.SCP_Roleplay;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace Scp_Map
@@ -31,6 +32,63 @@ namespace Scp_Map
         }
         private void changed()
         {
+            string HostRole = "";
+            string ScpTBSelected="";
+            var playerNames = lstPlayerList.Items.Cast<string>();
+            string CDs = string.Join(NL, playerNames);
+            var ComplayerNames = lstCombatative.Items.Cast<string>();
+            string Combatatives = string.Join(NL, ComplayerNames);
+            var dangerousPlayers = lstDangerous.Items.Cast<string>();
+            string armedPlayers = string.Join(NL, dangerousPlayers.Select(player => $"{player}[Armed]"));
+            switch (ScpTB_Write.Text)
+            {
+                case "999":ScpTBSelected = "The Tickle Monster"; break;
+                case "1193": ScpTBSelected = "Buried Giant"; break;
+                case "860": ScpTBSelected = "Blue Key"; break;
+                case "120": ScpTBSelected = "Teleporting Paddling Pool"; break;
+                case "1499": ScpTBSelected = "The Gas Mask"; break;
+                case "714": ScpTBSelected = "Jade Ring"; break;
+                case "914": ScpTBSelected = "Refinary Machine"; break;
+                case "498": ScpTBSelected = "ll Minute Snooze"; break;
+                case "207": ScpTBSelected = "Cola Bottles\r\n"; break;
+                case "330": ScpTBSelected = "Bowl Of Candy"; break;
+                case "1025": ScpTBSelected = "Encyclopaedia Of Diseases"; break;
+                case "517": ScpTBSelected = "Grammie Knows"; break;
+                case "148": ScpTBSelected = "The TeleKill Alloy"; break;
+                case "178": ScpTBSelected = "3D Glasses"; break;
+                case "1139": ScpTBSelected = "The Broken Tongue"; break;
+                case "087": ScpTBSelected = "The Stairwell"; break;
+                case "224": ScpTBSelected = "Grandfather Clock"; break;
+                case "902": ScpTBSelected = "The Final Countdown"; break;
+                case "403": ScpTBSelected = "Escalating Lighter"; break;
+                case "1162": ScpTBSelected = "Hole in a Wall"; break;
+                case "701": ScpTBSelected = "Hanged KIng's Tragedy"; break;
+                case "008": ScpTBSelected = "The Virus"; break;
+                case "173": ScpTBSelected = "The Sculpture"; break;
+                case "093": ScpTBSelected = "Red Sea Object\r\n"; break;
+                case "2059": ScpTBSelected = "Wall Of Flesh"; break;
+                case "035": ScpTBSelected = "The Mask"; break;
+                case "409": ScpTBSelected = "The Crystal"; break;
+                case "2521": ScpTBSelected = "●●I●●●●●I●●I●"; break;
+                case "049": ScpTBSelected = "The Plague Doctor"; break;
+                case "017": ScpTBSelected = "The Shadow Child"; break;
+                case "2006": ScpTBSelected = "Too Spooky"; break;
+                case "939": ScpTBSelected = "With Many Voices"; break;
+                case "457": ScpTBSelected = "The Burning Man"; break;
+                case "096": ScpTBSelected = "Shy Guy"; break;
+                case "106": ScpTBSelected = "Old Man"; break;
+                case "076": ScpTBSelected = "Able"; break;
+                default:ScpTBSelected = "N/A";break;
+            }
+            switch (HostSelected)
+            {
+                case 1:HostRole ="Overseer";break;
+                case 2:HostRole ="SiD";break;
+                case 3:HostRole ="ScD"; break;
+                default:HostRole = "N/A";break;
+            }
+            Clipboard.Text = $"SCP: {ScpTBSelected}{NL}{NL}CD:{NL}{CDs}{NL}{armedPlayers}{NL}{NL}Combatative:{NL}{Combatatives}{NL}{NL}Host: {HostTB_Write.Text}[{HostRole}]";
+
         }
         private void ListBox_MouseDown(object sender, MouseEventArgs e)
         {
@@ -58,12 +116,10 @@ namespace Scp_Map
 
             if (draggedItem != null)
             {
-                // Remove from the source list
                 lstPlayerList.Items.Remove(draggedItem);
                 lstDead.Items.Remove(draggedItem);
                 lstDangerous.Items.Remove(draggedItem);
                 lstCombatative.Items.Remove(draggedItem);
-                // Remove from the target list if already present
                 if (!targetListBox.Items.Contains(draggedItem))
                 {
                     targetListBox.Items.Add(draggedItem);
@@ -73,8 +129,8 @@ namespace Scp_Map
         }
         private void btnAddPlayer_Click(object sender, EventArgs e)
         {
-            string roleString;
-            string rankString;
+            string roleString = "";
+            string rankString = "";
             switch (RoleSelected)
             {
                 case 1:
@@ -93,34 +149,39 @@ namespace Scp_Map
                     roleString = "Unknown Role";
                     break;
             }
-
-            // Map RankSelected to corresponding strings
-            switch (RankSelected)
+            if (RoleSelected != 1)
             {
-                case 1:
-                    rankString = "I";
-                    break;
-                case 2:
-                    rankString = "II";
-                    break;
-                case 3:
-                    rankString = "III";
-                    break;
-                case 4:
-                    rankString = "IIII";
-                    break;
-                case 5:
-                    rankString = "IIIII";
-                    break;
-                default:
-                    rankString = "Unknown Rank";
-                    break;
+                switch (RankSelected)
+                {
+                    case 1:
+                        rankString = "I";
+                        break;
+                    case 2:
+                        rankString = "II";
+                        break;
+                    case 3:
+                        rankString = "III";
+                        break;
+                    case 4:
+                        rankString = "IIII";
+                        break;
+                    case 5:
+                        rankString = "IIIII";
+                        break;
+                    default:
+                        rankString = "Unknown Rank";
+                        break;
+                }
             }
             string playerName = PlayerNameTB.Text.Trim();
-
             if (!string.IsNullOrEmpty(playerName))
             {
-                string PlayerNameMod = $"{playerName} ({roleString}) [{rankString}]";
+                string PlayerNameMod = $"{playerName} ({roleString})";
+                if (RoleSelected != 1)
+                {
+                    PlayerNameMod += $"[{rankString}]";
+                }
+
                 lstPlayerList.Items.Add(PlayerNameMod);
                 PlayerNameTB.Clear();
             }
@@ -138,7 +199,6 @@ namespace Scp_Map
                 string removedItem = lstPlayerList.SelectedItem.ToString();
                 lstPlayerList.Items.Remove(removedItem);
 
-                // Remove from other lists as well
                 lstDead.Items.Remove(removedItem);
                 lstDangerous.Items.Remove(removedItem);
                 lstCombatative.Items.Remove(removedItem);
@@ -148,7 +208,6 @@ namespace Scp_Map
                 string removedItem = lstDead.SelectedItem.ToString();
                 lstDead.Items.Remove(removedItem);
 
-                // Remove from other lists as well
                 lstPlayerList.Items.Remove(removedItem);
                 lstDangerous.Items.Remove(removedItem);
                 lstCombatative.Items.Remove(removedItem);
@@ -158,7 +217,6 @@ namespace Scp_Map
                 string removedItem = lstDangerous.SelectedItem.ToString();
                 lstDangerous.Items.Remove(removedItem);
 
-                // Remove from other lists as well
                 lstPlayerList.Items.Remove(removedItem);
                 lstDead.Items.Remove(removedItem);
                 lstCombatative.Items.Remove(removedItem);
@@ -168,7 +226,6 @@ namespace Scp_Map
                 string removedItem = lstCombatative.SelectedItem.ToString();
                 lstCombatative.Items.Remove(removedItem);
 
-                // Remove from other lists as well
                 lstPlayerList.Items.Remove(removedItem);
                 lstDangerous.Items.Remove(removedItem);
                 lstDead.Items.Remove(removedItem);
@@ -256,6 +313,7 @@ namespace Scp_Map
             lvl4TB.BackColor = Color.Red;
             lvl5TB.BackColor = Color.Red;
             RankSelected = 1;
+            changed();
         }
 
         private void lvl2TB_Click(object sender, EventArgs e)
@@ -266,6 +324,7 @@ namespace Scp_Map
             lvl4TB.BackColor = Color.Red;
             lvl5TB.BackColor = Color.Red;
             RankSelected = 2;
+            changed();
         }
 
         private void lvl3TB_Click(object sender, EventArgs e)
@@ -276,6 +335,7 @@ namespace Scp_Map
             lvl4TB.BackColor = Color.Red;
             lvl5TB.BackColor = Color.Red;
             RankSelected = 3;
+            changed();
         }
 
         private void lvl4TB_Click(object sender, EventArgs e)
@@ -286,6 +346,7 @@ namespace Scp_Map
             lvl4TB.BackColor = Color.Lime;
             lvl5TB.BackColor = Color.Red;
             RankSelected = 4;
+            changed();
         }
 
         private void lvl5TB_Click(object sender, EventArgs e)
@@ -296,6 +357,7 @@ namespace Scp_Map
             lvl4TB.BackColor = Color.Red;
             lvl5TB.BackColor = Color.Lime;
             RankSelected = 5;
+            changed();
         }
 
         private void CDbtn_Click(object sender, EventArgs e)
@@ -305,6 +367,7 @@ namespace Scp_Map
             RRTbtn.BackColor = Color.Red;
             SDbtn.BackColor = Color.Red;
             RoleSelected = 1;
+            changed();
         }
 
         private void MTFbtn_Click(object sender, EventArgs e)
@@ -314,6 +377,7 @@ namespace Scp_Map
             RRTbtn.BackColor = Color.Red;
             SDbtn.BackColor = Color.Red;
             RoleSelected = 2;
+            changed();
         }
 
         private void RRTbtn_Click(object sender, EventArgs e)
@@ -323,6 +387,7 @@ namespace Scp_Map
             RRTbtn.BackColor = Color.Lime;
             SDbtn.BackColor = Color.Red;
             RoleSelected = 3;
+            changed();
         }
 
         private void SDbtn_Click(object sender, EventArgs e)
@@ -332,6 +397,7 @@ namespace Scp_Map
             RRTbtn.BackColor = Color.Red;
             SDbtn.BackColor = Color.Lime;
             RoleSelected = 4;
+            changed();
         }
 
         private void O5btn_Click(object sender, EventArgs e)
@@ -340,6 +406,7 @@ namespace Scp_Map
             SiDbtn.BackColor = Color.Red;
             ScDbtn.BackColor = Color.Red;
             HostSelected = 1;
+            changed();
         }
 
         private void SiDbtn_Click(object sender, EventArgs e)
@@ -348,6 +415,7 @@ namespace Scp_Map
             SiDbtn.BackColor = Color.Lime;
             ScDbtn.BackColor = Color.Red;
             HostSelected = 2;
+            changed();
         }
 
         private void ScDbtn_Click(object sender, EventArgs e)
@@ -356,6 +424,17 @@ namespace Scp_Map
             SiDbtn.BackColor = Color.Red;
             ScDbtn.BackColor = Color.Lime;
             HostSelected = 3;
+            changed();
+        }
+
+        private void HostTB_Write_TextChanged(object sender, EventArgs e)
+        {
+            changed();
+        }
+
+        private void ScpTB_Write_TextChanged(object sender, EventArgs e)
+        {
+            changed();
         }
     }
 }
