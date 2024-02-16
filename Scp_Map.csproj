@@ -77,6 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="914Recipies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="914Recipies.Designer.cs">
+      <DependentUpon>914Recipies.cs</DependentUpon>
+    </Compile>
     <Compile Include="SCPinfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="914Recipies.resx">
+      <DependentUpon>914Recipies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SCPinfo.resx">
       <DependentUpon>SCPinfo.cs</DependentUpon>
     </EmbeddedResource>
